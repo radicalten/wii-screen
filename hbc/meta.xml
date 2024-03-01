@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<app version="1">
+  <name>Wii Screen</name>
+  <coder>Alberto Mardegan</coder>
+  <version>0.1</version>
+  <release_date>20240228000000</release_date>
+  <short_description>Video mode explorer</short_description>
+  <long_description>This program allows trying the different video modes supported by the Wii.
+  </long_description>
+</app>
