@@ -1,0 +1,23 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ "master" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: devkitpro/devkitppc:latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+    - name: Compile
+      run: |
+         cd templates/application/
+         make -j$(nproc)
+    - name: upload
+      uses: actions/upload-artifact@v4
+      with: 
+        path: |
+          .
